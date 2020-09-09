@@ -1,26 +1,28 @@
-# README
+#STEP 1: Integrate Basic Theme to Asset Pipeline
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+  / - And see a stubbed out, non-dynamic home page with the theme.
 
-Things you may want to cover:
+#Step 2: Allow people to CRUD lists.
 
-* Ruby version
 
-* System dependencies
+[] ListsController
+  #index
+- see all their lists
+-doubling as my #new action in that it is presenting the person with a form to create a new list.
+/ - index all the lists ...
+- create a list
 
-* Configuration
 
-* Database creation
+- show a list
 
-* Database initialization
+-i need a model
+-i need a controller
+-i should generate a resource
 
-* How to run the test suite
+I want people to be able to create lists. Then they should be able to add items to those lists. They should be able to navigate  many lists & see each list's items.
 
-* Services (job queues, cache servers, search engines, etc.)
+lists
+  has many items
 
-* Deployment instructions
-
-* ...
-# tododex
-# tododex
+items
+  belongs to a list
