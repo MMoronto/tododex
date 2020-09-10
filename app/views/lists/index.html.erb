@@ -6,24 +6,16 @@
 
 	<section class="main">
 		<ul class="todo-list">
+			<% @lists.each do |list| %>
       <li>
         <div class="view">
           <label><a href="#">Shopping List</a></label>
         </div>
       </li>
-      <li>
-        <div class="view">
-          <label><a href="#">Construction List</a></label>
-        </div>
-      </li>
-      <li>
-        <div class="view">
-          <label><a href="#">Nonsense List</a></label>
-        </div>
-      </li>
+			<% end %>
     </ul>
 	</section>
 
-	<footer class="footer" style="display: block;">
+	<footer class="footer">
 	</footer>
 </section>
