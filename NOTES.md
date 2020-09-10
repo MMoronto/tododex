@@ -1,6 +1,6 @@
 #STEP 1: Integrate Basic Theme to Asset Pipeline
 
-  / - And see a stubbed out, non-dynamic home page with the theme.
+[X]  / - And see a stubbed out, non-dynamic home page with the theme.
 
 #Step 2: Allow people to CRUD lists.
 
@@ -18,6 +18,9 @@
 -i need a model
 -i need a controller
 -i should generate a resource
+
+Does it impact the DB?
+Does it impact my URLS?
 
 I want people to be able to create lists. Then they should be able to add items to those lists. They should be able to navigate  many lists & see each list's items.
 
