@@ -5,4 +5,8 @@ class ListsController < ApplicationController
     # render 'lists/index.html.erb'
   end
 
+  def show
+    @list = List.find(params[:id])
+  end
+
 end
