@@ -24,6 +24,19 @@ Does it impact my URLS? '/lists/1' #
 
 # Step 3: Add Items to a List
 
-does it impact the DB? -
+- Make the items in a list real
+  - a list has many items and every item belongs to a list.
+
+  lists
+  2     Bullcrap List
+
+  items
+  id    description   list_id
+  1       Milk          2
+  1       Cookies       2  
+
+CREATE ACTION for an ITEM in a LIST - What is the URL / HTTP method for that?
+
+Does it impact the DB? - I prob need an items table - associated with a list.
 
 Does it impact my URLS? '/lists/1' #
