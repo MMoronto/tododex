@@ -20,12 +20,6 @@
 -i should generate a resource
 
 Does it impact the DB?
-Does it impact my URLS?
+Does it impact my URLS? '/lists/1' #
 
-I want people to be able to create lists. Then they should be able to add items to those lists. They should be able to navigate  many lists & see each list's items.
-
-lists
-  has many items
-
-items
-  belongs to a list
+# Step 3: Add Items to a List
