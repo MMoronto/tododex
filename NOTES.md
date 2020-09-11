@@ -23,3 +23,7 @@ Does it impact the DB?
 Does it impact my URLS? '/lists/1' #
 
 # Step 3: Add Items to a List
+
+does it impact the DB? -
+
+Does it impact my URLS? '/lists/1' #
