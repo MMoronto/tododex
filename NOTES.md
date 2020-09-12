@@ -37,6 +37,15 @@ Does it impact my URLS? '/lists/1' #
 
 CREATE ACTION for an ITEM in a LIST - What is the URL / HTTP method for that?
 
+- The form is already present in the list show page.
+- What URL does this form imply?
+
+POST / items/ :id/items #=> Doesn't describe which list we are adding an item to?
+
+An item doesn't exist outside in our application outside the context of the list it belongs to
+
+Nested Resource -m Items are nested in terms of URLs under their parent list.
+
 Does it impact the DB? - I prob need an items table - associated with a list.
 
 Does it impact my URLS? '/lists/1' #
