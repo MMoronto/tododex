@@ -1,5 +1,5 @@
 class List < ApplicationRecord
   has_many :items #Just adds methods
-  validates :presence => :name
-  
+  validates :name, :presence => :name
+
 end
