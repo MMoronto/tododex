@@ -44,8 +44,17 @@ POST / items/ :id/items #=> Doesn't describe which list we are adding an item to
 
 An item doesn't exist outside in our application outside the context of the list it belongs to
 
-Nested Resource -m Items are nested in terms of URLs under their parent list.
+Nested Resource -Items are nested in terms of URLs under their parent list.
 
 Does it impact the DB? - I prob need an items table - associated with a list.
 
 Does it impact my URLS? '/lists/1' #
+
+#Step 4: Adding Validations
+
+Validate that lists have a named
+Validate that items have a description.
+
+#Step 5: I want to add state (complete, incomplete ) to Items in a List
+- Marking items as complete or incomplete.
+#Step 6: Deleting Items from a list
