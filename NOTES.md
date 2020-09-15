@@ -56,5 +56,28 @@ Validate that lists have a named
 Validate that items have a description.
 
 #Step 5: I want to add state (complete, incomplete ) to Items in a List
+
 - Marking items as complete or incomplete.
+What urls do i need & how might my database change?
+
+- the idea of an item being complete or incomplete requires data.
+
+- new forms for updating the status of an item - which means new URKL
+
+/lists/1/items
+  PUT/PATCH/lists/1/items/1
+  PUT/PATCH /lists/:list_id/items/:id
+
+I know i need to steal that checkbox HTML from todomvc
+
+<input class="toggle" type="checkbox">
+
+I need that JS function to submit the form when you click the checkbox
+
+$(function(){
+  $("input.toggle").on("change", function(){
+    $(this).parents("form").trigger("submit")
+    })
+  });
+
 #Step 6: Deleting Items from a list
