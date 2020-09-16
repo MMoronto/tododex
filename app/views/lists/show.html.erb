@@ -11,7 +11,7 @@
 		<label for="toggle-all">Mark all as complete</label>
 		<ul class="todo-list">
 			<% @list.items.each do |item| %>
-      <li>
+      <li class="completed">
         <div class="view">
 					<input class="toggle" type="checkbox">
 					<label><%= item.description %></label>
