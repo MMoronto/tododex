@@ -13,7 +13,7 @@
 			<% @list.items.each do |item| %>
       <li class="<%= "completed" if item.complete? %>">
         <div class="view">
-					<%= form_for([@list, item], :url => list_item_path(@list, item), :method => :patch) do |f| %>
+					<%= form_for([@list, item]) do |f| %>
 						<input class="toggle" type="checkbox" <%= "checked='checked' " if item.complete? %>>
 					<% end %>
 
