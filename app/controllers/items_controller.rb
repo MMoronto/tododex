@@ -13,17 +13,15 @@ class ItemsController < ApplicationController
   def update
     # What item am I trying to update?
     @item = Item.find(params[:id])
-    @item.status = params[:item][:status] # 0,1
-    @item.save
+    @item.update(item_params)
 
     redirect_to list_path(@item.list)
-
     # I can use that data to update the item described in the URL
   end
 
   private
     def item_params
-      params.require(:item).permit(:description)
+      params.require(:item).permit(:description, :status)
     end
 
 end
