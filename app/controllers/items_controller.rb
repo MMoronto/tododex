@@ -11,9 +11,14 @@ class ItemsController < ApplicationController
 
   # PATCH - /lists/:list_id/:id
   def update
-    raise params.inspect # the data the form submitted
+    # What item am I trying to update?
+    @item = Item.find(params[:id])
+    @item.status = params[:item][:status] # 0,1
+    @item.save
 
-    # I can use that data to update the item described in the URL 
+    redirect_to list_path(@item.list)
+
+    # I can use that data to update the item described in the URL
   end
 
   private
