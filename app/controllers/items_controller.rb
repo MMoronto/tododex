@@ -9,13 +9,16 @@ class ItemsController < ApplicationController
     end
   end
 
+  # PATCH - /lists/:list_id/:id
   def update
-    raise params.inspect
+    raise params.inspect # the data the form submitted
+
+    # I can use that data to update the item described in the URL 
   end
 
   private
     def item_params
       params.require(:item).permit(:description)
     end
-    
+
 end
