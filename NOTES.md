@@ -80,4 +80,6 @@ $(function(){
     })
   });
 
+# REFACTOR 1: Start using partials in lists/show because it's a bit messy.   
+
 #Step 6: Deleting Items from a list
